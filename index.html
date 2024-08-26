@@ -49,18 +49,19 @@
       
           <!-- Icons -->
           <div class="hidden md:!block md:flex lg:flex space-x-4 items-center">
-            <button class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-7a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+            <button class="focus:outline-none p-2 bg-white rounded-3xl border border-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-7a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
             </button>
-            <button class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7H3m4 6l-1.5 6h11L17 13M7 13h10m-3 8a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z" />
-              </svg>
-              
+            <button class="focus:outline-none p-2 bg-white rounded-3xl border border-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 7H3m4 6l-1.5 6h11L17 13M7 13h10m-3 8a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z" />
+                </svg>
             </button>
-          </div>
+        </div>
+        
+        
       
           <!-- Button -->
           <div class="hidden md:!block md:flex lg:flex items-center">
@@ -74,8 +75,8 @@
           
           <!-- Hamburger Menu (Visible on small devices) -->
           <div class="lg:hidden flex items-center">
-            <button id="hamburger" class="focus:outline-none">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <button id="hamburger" class="focus:outline-none p-2 bg-white rounded-3xl border border-gray-200">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 bg-white rounded-xl border-inherit border-gray-200">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
@@ -116,23 +117,31 @@
            </div>
            <div class="ml-4 mr-4 lg:grid grid-cols-2">
               <div>
-                 <div>
+                
+                <div class="flex flex-col items-center lg:items-start lg:text-left text-center">
                   <div class="navbar-end lg:ml-7 lg:mt-2 lg:mb-2">
-                    <a class="btn rounded-2xl bg-white text-lg text-neutral-900"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                    About Us</a>       
+                      <a class="btn rounded-2xl bg-white text-lg text-neutral-900 inline-flex items-center px-4 py-2 w-40">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>
+                          About Us
+                      </a>
                   </div>
-                   
-                   <h1 class="lg:text-4xl font-extrabold text-neutral-900 sm:text-lg">We design thoughtful, liveable spaces</h1>
-                   <p class="text-neutral-600 lg:pb-3 pt-3 lg:text-lg font-medium sm:text-sm">The barn house captivates with its blend of rustic charm and 
-                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
-                 </div>
+              
+                  <h1 class="lg:text-4xl font-extrabold text-neutral-900 sm:text-lg mt-4 lg:mt-0">
+                      We design thoughtful, liveable spaces
+                  </h1>
+                  <p class="text-neutral-600 lg:pb-3 pt-3 lg:text-lg font-medium sm:text-sm max-w-lg lg:max-w-none">
+                      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                  </p>
+              </div>
+              
+
                  <div class="bg-white mb-3 mr-4 pt-2 pl-2 rounded-xl grid grid-cols-2 place-items-center">
                   <div><img src="assets/commercial.png" alt=""></div>
                   <div>
                     <h4 class="text-sm text-stone-800 font-extrabold">commercial</h4>
-                    <p class="font-medium text-base text-neutral-500">A commercial area is real estate intended for use by for-profit businesses</p></div>
+                    <p class="pr-3 font-medium text-base text-neutral-500">A commercial area is real estate intended for use by for-profit businesses</p></div>
                   
                   
                  </div>
@@ -142,7 +151,7 @@
                   </div>
                   <div>
                     <h4 class="text-sm text-stone-800 font-extrabold">residential</h4>
-                    <p class="font-medium text-base text-neutral-500">A residential area is a land used in which housing predominates, as opposed to commercial areas</p>
+                    <p class="pr-3 font-medium text-base text-neutral-500">A residential area is a land used in which housing predominates, as opposed to commercial areas</p>
                   </div>
                   
                   
@@ -284,8 +293,50 @@
           </div>
           
          </section>
+         <!-- review section started -->
+         <section class="review-container text-center py-10 m-8">
+          <div>
+              <h3 class="text-black text-4xl font-extrabold">Our Client Review</h3>
+              <p class="font-medium text-base text-neutral-500 text-sm mt-2 pb-8">
+                  You can check our review given by our Client or their given feedback
+              </p>
+          </div>
+          <div class="box-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic1.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">Sharmin Akter Rimi</h4>
+                  <p class="text-white mt-2">Clean and elegant design with a focus on large, high-quality images. The homepage features a full-screen hero image of the barn, giving an immediate sense of the space.</p>
+              </div>
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic2.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">Ahmed Faisal</h4>
+                  <p class="text-white mt-2">Easy navigation with clear call-to-action buttons for booking events and exploring the venue. The site is mobile-friendly and loads quickly.</p>
+              </div>
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic3.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">Sanjida Binta Aziz</h4>
+                  <p class="text-white mt-2"> The minimalistic design makes it easy to find information, and the virtual tour provides an immersive experience.</p>
+              </div>
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic4.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">MD. Nayem Uddin</h4>
+                  <p class="text-white mt-2">The site features an interactive availability calendar and a booking form that's easy to use. It also has an integrated map for location details.</p>
+              </div>
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic5.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">Tasfia Tasnim</h4>
+                  <p class="text-white mt-2">Traditional and elegant, with a focus on heritage and history. The use of serif fonts and muted colors gives a classic feel.</p>
+              </div>
+              <div class="box relative p-8 bg-gray-800 text-center rounded-lg shadow-lg">
+                  <img src="assets/pic6.png" alt="" class="box-img absolute inset-x-1/2 top-[-50px] transform -translate-x-1/2 h-32 w-32 rounded-full border-4 border-white object-cover">
+                  <h4 class="text-white text-lg font-semibold mt-16">Humaira Tasnim Eshika</h4>
+                  <p class="text-white mt-2"> Bright and cheerful, with an emphasis on outdoor spaces. The website uses vibrant colors and playful typography to create a welcoming atmosphere.</p>
+              </div>
+          </div>
+      </section>
 <!-- next project section -->
-         <section class="bg-[url('./assets/bg.jpg')] pt-4">
+      <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat bg-center pt-4">
+
           <div class="md:w-[80%] md:mx-auto mt-14 m-4">
             <div class="flex flex-col items-center justify-center text-center">
               <div class="navbar-end lg:ml-7 lg:mt-2 lg:mb-2 w-64">
@@ -341,6 +392,10 @@
           </div>
           
          </section>
+
+         
+      
+         
 
     </main>
     <footer class="bg-black">
